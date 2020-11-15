@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Attentip Team Charmander</string>
+    <string name="buendia">Buen día Carlos,</string>
+    <string name="quehacer">¿Qué deseas realizar hoy?</string>
+    <string name="tipoPausa">Tipo de pausa activa:</string>
+    <string name="fisica">Física</string>
+    <string name="mental">Mental</string>
+    <string name="aleatorio">Aleatorio</string>
+    <string name="time1">1 min</string>
+    <string name="time3">3 min</string>
+    <string name="time5">5 min</string>
+    <string name="time10">10 min</string>
+    <string name="welcome">¡Bienvenido a Attentip!</string>
+    <string name="pulpi">Yo soy Pulpi, tu acompañante de Pausas Activas</string>
+    <string name="getname">¿Cuál es tu nombre?</string>
+    <string name="examplename">Carlos</string>
+</resources>

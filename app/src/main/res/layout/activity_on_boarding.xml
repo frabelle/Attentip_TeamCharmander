@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#262A40"
     tools:context=".OnBoarding">
 
     <ImageView
@@ -24,7 +25,7 @@
         android:src="@drawable/bannerapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.13"
         />
 
     <TextView
@@ -33,7 +34,9 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome"
         style="@style/AppTheme.Base.FistText_Black"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/logo"/>
 
     <LinearLayout
@@ -41,49 +44,89 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/text1">
 
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            style="@style/AppTheme.Base.TextP"
-            android:text="@string/pulpi"
-            android:layout_marginTop="40dp" />
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            style="@style/AppTheme.Base.Title2_Black"
-            android:text="@string/getname"
-            android:layout_marginTop="50dp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/chat"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                style="@style/AppTheme.Base.TextP"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#F5B2D5"
+                android:padding="16dp"
+                android:text="@string/pulpi"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/whatsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.Base.Title2_Black"
+            android:text="@string/getname"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="35dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                style="@style/AppTheme.Base.Title2_Black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre"
-                />
+                android:background="@color/white"
+                android:textSize="18sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
-            android:layout_height="55dp"
+            android:layout_height="58dp"
             app:cornerRadius="10dp"
-            android:textSize="18sp"
-            android:text="Continuar"
+            android:textSize="20sp"
+            android:text="@string/continuar"
             android:textAllCaps="false"
             android:gravity="center"
             android:backgroundTint="@color/azul_fondo_dark"
-            android:layout_marginTop="40dp"/>
+            android:layout_marginTop="35dp"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59">
+
+        <ImageView
+            android:id="@+id/pulpi"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logoapp" />
+
+    </LinearLayout>
+
+
 
 
 

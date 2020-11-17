@@ -14,4 +14,6 @@
     <string name="pulpi">Yo soy Pulpi, tu acompañante de Pausas Activas</string>
     <string name="getname">¿Cuál es tu nombre?</string>
     <string name="examplename">Carlos</string>
+    <string name="progress">Progreso</string>
+    <string name="continuar">Continuar</string>
 </resources>

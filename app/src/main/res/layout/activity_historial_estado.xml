@@ -91,8 +91,8 @@
                 android:layout_height="match_parent"
                 android:background="@color/blancoOpaco"
                 android:gravity="center"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -107,8 +107,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_gravity="start">
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -117,25 +117,25 @@
                         android:padding="8dp"
                         android:text="@string/tu_estado_de_nimo"
                         android:textColor="@color/black"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/emoji_emotions_white_24dp"
-                            app:tint="@color/feliz"/>
+                            app:tint="@color/feliz" />
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/mood_bad_24px"
-                            app:tint="@color/triste"/>
+                            app:tint="@color/triste" />
 
                     </LinearLayout>
 
@@ -162,9 +162,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/blancoOpaco"
-                android:padding="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,8 +179,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_gravity="start">
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -189,19 +189,19 @@
                         android:padding="8dp"
                         android:text="@string/tu_estado_de_nimo"
                         android:textColor="@color/black"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/emoji_emotions_white_24dp"
-                            app:tint="@color/feliz"/>
+                            app:tint="@color/feliz" />
 
                     </LinearLayout>
 
@@ -229,8 +229,8 @@
                 android:layout_height="match_parent"
                 android:background="@color/blancoOpaco"
                 android:gravity="center"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -245,8 +245,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_gravity="start">
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -255,25 +255,25 @@
                         android:padding="8dp"
                         android:text="@string/tu_estado_de_nimo"
                         android:textColor="@color/black"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/mood_bad_24px"
-                            app:tint="@color/triste"/>
+                            app:tint="@color/triste" />
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/sentiment_very_dissatisfied_24px"
-                            app:tint="@color/regular"/>
+                            app:tint="@color/regular" />
 
                     </LinearLayout>
 
@@ -283,8 +283,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

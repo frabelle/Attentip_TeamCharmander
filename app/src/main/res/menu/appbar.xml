@@ -4,7 +4,7 @@
 
 
     <item
-        android:title="Buscar"
+        android:title="User"
         android:id="@+id/search"
         android:icon="@drawable/account_circle_white_24dp"
         app:showAsAction="always"/>

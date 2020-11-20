@@ -9,15 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="azul_fondo_dark">#000029</color>
     <color name="azul_sec_dark">#262A40</color>
-    <color name="fondo_opaco">#767474</color>
     <color name="morado_de_mental">#A468E3</color>
     <color name="rojo_de_fisico">#D44067</color>
     <color name="pink_logo">#f8a0b7</color>
-    <color name="blue_logo">#b3edff</color>
-    <color name="feliz">#F01800</color>
-    <color name="normal">#FFD65C</color>
-    <color name="regular">#008CF0</color>
-    <color name="triste">#003CF0</color>
-    <color name="blancoOpaco">#E0E0E6</color>
-
 </resources>

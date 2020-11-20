@@ -16,22 +16,4 @@
     <string name="examplename">Carlos</string>
     <string name="progress">Progreso</string>
     <string name="continuar">Continuar</string>
-    <string name="notifica_dscrp">Notificaciones del sistema</string>
-    <string name="diario_de_emociones">Diario de emociones</string>
-    <string name="exercise_dscrp">Área de entrenamiento</string>
-    <string name="logros_dscrp">Logros registrados en la plataforma</string>
-    <string name="home">Inicio</string>
-    <string name="lunes">Lun</string>
-    <string name="martes">Mar</string>
-    <string name="miercoles">Mie</string>
-    <string name="jueves">Jue</string>
-    <string name="viernes">Vie</string>
-    <string name="sabado">Sab</string>
-    <string name="domingo">Dom</string>
-    <string name="hi">Hola Carlos,</string>
-    <string name="howufeel">¿Cómo te sientes?</string>
-    <string name="save">Guardar</string>
-    <string name="estadoAnimo">Estados de ánimo</string>
-    <string name="hey">¡Hey Carlos! Hecha un vistazo a tus estados de ánimo de esta semana.</string>
-    <string name="tu_estado_de_nimo">Tu estado de ánimo</string>
 </resources>

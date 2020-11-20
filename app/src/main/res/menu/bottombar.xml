@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:contentDescription="@string/home"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Moods"
+        android:id="@+id/mood"
+        android:icon="@drawable/emoji_emotions_white_24dp"
+        android:contentDescription="@string/diario_de_emociones"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Ejercicios"
+        android:id="@+id/exercise"
+        android:icon="@drawable/directions_run_white_24dp"
+        android:contentDescription="@string/exercise_dscrp"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Logros"
+        android:id="@+id/events"
+        android:icon="@drawable/emoji_events_white_24dp"
+        android:contentDescription="@string/logros_dscrp"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Avisos"
+        android:id="@+id/notifications"
+        android:icon="@drawable/notifications_active_white_24dp"
+        android:contentDescription="@string/notifica_dscrp"
+        app:showAsAction="always"/>
+
+</menu>

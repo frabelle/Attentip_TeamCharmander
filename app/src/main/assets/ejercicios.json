@@ -83,16 +83,16 @@
           "nombre":"Meditación",
           "ejercicios":[
             {
-              "nombre": "Ejercicio 1",
-              "descripcion": "Meditación Ejercicio 1"
+              "nombre": "Mindfulness",
+              "descripcion": "Ejercicio de meditación prestando atención a la respiración "
             },
             {
-              "nombre": "Ejercicio 2",
-              "descripcion": "Meditación Ejercicio 2"
+              "nombre": "Meditación en movimiento",
+              "descripcion": "Ejercicio de meditación moviendo los brazos"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Meditación Ejercicio 3"
+              "nombre": "Body Scan",
+              "descripcion": "Prestar atención a los músculos de algunas partes del cuerpo "
             }
           ]
         },

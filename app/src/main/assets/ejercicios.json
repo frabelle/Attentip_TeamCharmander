@@ -9,16 +9,16 @@
           "nombre":"Flexibilidad Dinámica",
           "ejercicios":[
             {
-              "nombre": "Ejercicio 1",
-              "descripcion": "Flexibilidad Dinámica Ejercicio 1"
+              "nombre": "Flexibilidad Inferior",
+              "descripcion": "Ejercicios para estirar las extremidades inferiores del cuerpo"
             },
             {
-              "nombre": "Ejercicio 2",
-              "descripcion": "Flexibilidad Dinámica Ejercicio 2"
+              "nombre": "Flexibilidad de Tronco",
+              "descripcion": "Ejercicios para estirar los brazos, cadera, espalda"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Flexibilidad Dinámica Ejercicio 3"
+              "nombre": "Flexibilidad de Cuello",
+              "descripcion": "Ejercicios para estirar el cuello"
             }
           ]
         },
@@ -26,16 +26,16 @@
           "nombre":"Activación Muscular",
           "ejercicios":[
             {
-              "nombre": "Ejercicio 1",
-              "descripcion": "Activación Muscular Ejercicio 1"
+              "nombre": "Abdominales y Tronco",
+              "descripcion": "Ejercicios cortos para ejercitar los abdominales y tronco"
             },
             {
-              "nombre": "Ejercicio 2",
-              "descripcion": "Activación Muscular Ejercicio 2"
+              "nombre": "Brazos y Hombros",
+              "descripcion": "Ejercicios cortos para ejercitar los brazos y hombros"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Activación Muscular Ejercicio 3"
+              "nombre": "Glúteos y piernas",
+              "descripcion": "Ejercicios cortos para ejercitar los glúteos y piernas"
             }
           ]
         },
@@ -43,16 +43,16 @@
           "nombre":"Movilidad Articular",
           "ejercicios":[
             {
-              "nombre": "Ejercicio 1",
-              "descripcion": "Movilidad Articular Ejercicio 1"
+              "nombre": "Cuello",
+              "descripcion": "Ejercicios de calentamiento para cuello"
             },
             {
-              "nombre": "Ejercicio 2",
-              "descripcion": "Movilidad Articular Ejercicio 2"
+              "nombre": "Tronco y Cadera",
+              "descripcion": "Ejercicios de calentamiento para tronco y cadera"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Movilidad Articular Ejercicio 3"
+              "nombre": "Rodillas y Tobillos",
+              "descripcion": "Ejercicios de calentamiento para rodillas y tobillos"
             }
           ]
         }

@@ -42,12 +42,11 @@
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
-                android:textSize="30sp"
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
+                android:text="@string/welcome"
                 android:textColor="@color/azul_fondo_dark"
-                />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/logo"

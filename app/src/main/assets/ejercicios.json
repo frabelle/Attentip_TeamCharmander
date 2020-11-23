@@ -1,0 +1,120 @@
+{
+  "modulo": "Tipos de Pausas Activas",
+  "bienvenida": "Buen dia, ¿Qué deseas realizar hoy?",
+  "categorias": [
+    {
+      "nombre": "Física",
+      "subcategoria": [
+        {
+          "nombre":"Flexibilidad Dinámica",
+          "ejercicios":[
+            {
+              "nombre": "Flexibilidad Inferior",
+              "descripcion": "Ejercicios para estirar las extremidades inferiores del cuerpo"
+            },
+            {
+              "nombre": "Flexibilidad de Tronco",
+              "descripcion": "Ejercicios para estirar los brazos, cadera, espalda"
+            },
+            {
+              "nombre": "Flexibilidad de Cuello",
+              "descripcion": "Ejercicios para estirar el cuello"
+            }
+          ]
+        },
+        {
+          "nombre":"Activación Muscular",
+          "ejercicios":[
+            {
+              "nombre": "Abdominales y Tronco",
+              "descripcion": "Ejercicios cortos para ejercitar los abdominales y tronco"
+            },
+            {
+              "nombre": "Brazos y Hombros",
+              "descripcion": "Ejercicios cortos para ejercitar los brazos y hombros"
+            },
+            {
+              "nombre": "Glúteos y piernas",
+              "descripcion": "Ejercicios cortos para ejercitar los glúteos y piernas"
+            }
+          ]
+        },
+        {
+          "nombre":"Movilidad Articular",
+          "ejercicios":[
+            {
+              "nombre": "Cuello",
+              "descripcion": "Ejercicios de calentamiento para cuello"
+            },
+            {
+              "nombre": "Tronco y Cadera",
+              "descripcion": "Ejercicios de calentamiento para tronco y cadera"
+            },
+            {
+              "nombre": "Rodillas y Tobillos",
+              "descripcion": "Ejercicios de calentamiento para rodillas y tobillos"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "nombre": "Mental",
+      "subcategoria": [
+        {   
+          "nombre":"Respiración",
+          "ejercicios":[
+            {     
+              "nombre": "Respiración profunda",
+              "descripcion": "Concetrate en tu respiración con los ojos cerrados"
+            },
+            {
+              "nombre": "Respiración abdominal",
+              "descripcion": "Ejercicio de respiración con las manos sobre el abdomen"
+            },
+            {
+              "nombre": "Respiración clavicular",
+              "descripcion": "Ejercicio de respiración movimiendo de manera ascendente los hombros y clavícula"
+            }
+          ]
+        },
+        {
+          "nombre":"Meditación",
+          "ejercicios":[
+            {
+              "nombre": "Mindfulness",
+              "descripcion": "Ejercicio de meditación prestando atención a la respiración "
+            },
+            {
+              "nombre": "Meditación en movimiento",
+              "descripcion": "Ejercicio de meditación moviendo los brazos"
+            },
+            {
+              "nombre": "Body Scan",
+              "descripcion": "Prestar atención a los músculos de algunas partes del cuerpo "
+            }
+          ]
+        },
+        {
+          "nombre":"Visualización",
+          "ejercicios":[
+            {
+              "nombre": "Movimientos oculares",
+              "descripcion": "Visualización Ejercicio 1"
+            },
+            {
+              "nombre": "Parpadeo Rápido",
+              "descripcion": "Visualización Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Visualización Ejercicio 3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+}

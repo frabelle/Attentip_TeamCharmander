@@ -1,0 +1,120 @@
+{
+  "modulo": "Tipos de Pausas Activas",
+  "bienvenida": "Buen dia, ¿Qué deseas realizar hoy?",
+  "categorias": [
+    {
+      "nombre": "Física",
+      "subcategoria": [
+        {
+          "nombre":"Flexibilidad Dinámica",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Flexibilidad Dinámica Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Flexibilidad Dinámica Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Flexibilidad Dinámica Ejercicio 3"
+            }
+          ]
+        },
+        {
+          "nombre":"Activación Muscular",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Activación Muscular Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Activación Muscular Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Activación Muscular Ejercicio 3"
+            }
+          ]
+        },
+        {
+          "nombre":"Movilidad Articular",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Movilidad Articular Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Movilidad Articular Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Movilidad Articular Ejercicio 3"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "nombre": "Mental",
+      "ejercicios": [
+        {
+          "nombre":"Respiración",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Respiración Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Respiración Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Respiración Ejercicio 3"
+            }
+          ]
+        },
+        {
+          "nombre":"Meditación",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Meditación Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Meditación Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Meditación Ejercicio 3"
+            }
+          ]
+        },
+        {
+          "nombre":"Visualización",
+          "ejercicios":[
+            {
+              "nombre": "Ejercicio 1",
+              "descripcion": "Visualización Ejercicio 1"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": "Visualización Ejercicio 2"
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": "Visualización Ejercicio 3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+}

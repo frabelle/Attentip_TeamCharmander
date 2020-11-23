@@ -101,15 +101,15 @@
           "ejercicios":[
             {
               "nombre": "Movimientos oculares",
-              "descripcion": "Visualización Ejercicio 1"
+              "descripcion": "Movimiento de los ojos sin girar la cabeza"
             },
             {
               "nombre": "Parpadeo Rápido",
-              "descripcion": "Visualización Ejercicio 2"
+              "descripcion": "Realizar parpadeos continuos para relajar la vista"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Visualización Ejercicio 3"
+              "nombre": "Cubrimiento de ojos",
+              "descripcion": "Cubrirse ambos ojos con las manos para descansar la vista"
             }
           ]
         }

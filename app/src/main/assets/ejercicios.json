@@ -63,9 +63,23 @@
       "nombre": "Mental",
       "ejercicios": [
         {
+             "nombre": "Atención a los brazos ",
+              "descripcion": "Presta atención a tus brazos con los ojos cerrados"
+            },
+            {
+              "nombre": "Ejercicio 2",
+              "descripcion": " "
+            },
+            {
+              "nombre": "Ejercicio 3",
+              "descripcion": " "
+            }
+          ]
+        },
+        {
           "nombre":"Respiración",
           "ejercicios":[
-            {
+            {     
               "nombre": "Ejercicio 1",
               "descripcion": "Respiración Ejercicio 1"
             },

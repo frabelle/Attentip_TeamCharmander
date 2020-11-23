@@ -61,7 +61,7 @@
     },
     {
       "nombre": "Mental",
-      "ejercicios": [
+      "subcategoria": [
         {   
           "nombre":"Respiración",
           "ejercicios":[

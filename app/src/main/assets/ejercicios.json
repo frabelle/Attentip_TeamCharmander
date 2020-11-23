@@ -62,34 +62,20 @@
     {
       "nombre": "Mental",
       "ejercicios": [
-        {
-             "nombre": "Atención a los brazos ",
-              "descripcion": "Presta atención a tus brazos con los ojos cerrados"
-            },
-            {
-              "nombre": "Ejercicio 2",
-              "descripcion": " "
-            },
-            {
-              "nombre": "Ejercicio 3",
-              "descripcion": " "
-            }
-          ]
-        },
-        {
+        {   
           "nombre":"Respiración",
           "ejercicios":[
             {     
-              "nombre": "Ejercicio 1",
-              "descripcion": "Respiración Ejercicio 1"
+              "nombre": "Respiración profunda",
+              "descripcion": "Concetrate en tu respiración con los ojos cerrados"
             },
             {
-              "nombre": "Ejercicio 2",
-              "descripcion": "Respiración Ejercicio 2"
+              "nombre": "Respiración abdominal",
+              "descripcion": "Ejercicio de respiración con las manos sobre el abdomen"
             },
             {
-              "nombre": "Ejercicio 3",
-              "descripcion": "Respiración Ejercicio 3"
+              "nombre": "Respiración clavicular",
+              "descripcion": "Ejercicio de respiración movimiendo de manera ascendente los hombros y clavícula"
             }
           ]
         },

@@ -25,14 +25,14 @@
 
     <item
         android:title="Logros"
-        android:id="@+id/events"
+        android:id="@+id/goals"
         android:icon="@drawable/emoji_events_white_24dp"
         android:contentDescription="@string/logros_dscrp"
         app:showAsAction="always"/>
 
     <item
         android:title="Avisos"
-        android:id="@+id/notifications"
+        android:id="@+id/reminders"
         android:icon="@drawable/notifications_active_white_24dp"
         android:contentDescription="@string/notifica_dscrp"
         app:showAsAction="always"/>

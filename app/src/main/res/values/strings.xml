@@ -35,4 +35,6 @@
     <string name="hey">¡Hey Carlos! Hecha un vistazo a tus estados de ánimo de esta semana.</string>
     <string name="tu_estado_de_nimo">Tu estado de ánimo</string>
     <string name="respiraci_n">Respiración</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

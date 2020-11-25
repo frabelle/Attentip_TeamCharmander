@@ -11,12 +11,10 @@
         android:theme="@style/Theme.AttentipTeamCharmander">
         <activity android:name=".HistorialEstadoA"></activity>
         <activity android:name=".EstadoAnimo" />
-        <activity android:name=".Home" />
         <activity android:name=".ProgresoRegistro" />
         <activity android:name=".OnBoarding"/>
         <activity android:name=".PausaFisica" />
         <activity android:name=".PausaMental" />
-        <activity android:name=".HomeExercise" />
         <activity android:name=".MainActivity"/>
 
         <activity

@@ -71,25 +71,43 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.exercise:
-                            openFragment(HomeExerciseFragment.newInstance(username));
-                            return true;
-
-                        case R.id.mood:
-                            openFragment(EstadoAnimoFragment.newInstance(username));
-                             return true;
-
-                        case R.id.goals:
-                            openFragment(ProgresoFragment.newInstance());
-                            return true;
-
-                        case R.id.reminders:
-                            openFragment(RemindersFragment.newInstance());
-                            return true;
-                    }
-                    return false;
+                    SelectItemMenu(item);
+                    return true;
                 }
             };
+
+    private void SelectItemMenu(MenuItem item){
+        item.setCheckable(true);
+        // init corresponding fragment
+        switch (item.getItemId()) {
+            case R.id.exercise:
+                openFragment(HomeExerciseFragment.newInstance(username));
+                break;
+
+            case R.id.mood:
+                openFragment(EstadoAnimoFragment.newInstance(username));
+                break;
+
+            case R.id.goals:
+                openFragment(ProgresoFragment.newInstance());
+                break;
+
+            case R.id.reminders:
+                openFragment(RemindersFragment.newInstance());
+                break;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        MenuItem homeItem = bottomNavigation.getMenu().getItem(0);
+
+        if (!bottomNavigation.equals(homeItem.getItemId())) {
+            SelectItemMenu(homeItem);
+            bottomNavigation.setSelectedItemId(homeItem.getItemId());
+        } else {
+            super.onBackPressed();
+        }
+    }
 
 }

@@ -15,7 +15,6 @@ public class StartActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         launchFirstActivity();
-
     }
 
     private void launchFirstActivity(){

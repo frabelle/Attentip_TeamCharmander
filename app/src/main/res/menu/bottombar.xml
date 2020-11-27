@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="Home"
-        android:id="@+id/home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:contentDescription="@string/home"
+        android:title="Ejercicios"
+        android:id="@+id/exercise"
+        android:icon="@drawable/directions_run_white_24dp"
+        android:contentDescription="@string/exercise_dscrp"
         app:showAsAction="always"/>
 
     <item
@@ -17,13 +17,6 @@
         app:showAsAction="always"/>
 
     <item
-        android:title="Ejercicios"
-        android:id="@+id/exercise"
-        android:icon="@drawable/directions_run_white_24dp"
-        android:contentDescription="@string/exercise_dscrp"
-        app:showAsAction="always"/>
-
-    <item
         android:title="Logros"
         android:id="@+id/goals"
         android:icon="@drawable/emoji_events_white_24dp"
@@ -31,7 +24,7 @@
         app:showAsAction="always"/>
 
     <item
-        android:title="Avisos"
+        android:title="Alarmas"
         android:id="@+id/reminders"
         android:icon="@drawable/notifications_active_white_24dp"
         android:contentDescription="@string/notifica_dscrp"

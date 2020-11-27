@@ -24,14 +24,13 @@ public class StartActivity extends Activity {
         Intent intent;
 
         if (userConfig.userExists()) {
-            intent = new Intent(getBaseContext(),  EstadoAnimo.class);
+            intent = new Intent(getBaseContext(),  MainActivity.class);
         }else{
-            intent = new Intent(getBaseContext(), MainActivity.class);
+            intent = new Intent(getBaseContext(), OnBoarding.class);
         }
 
         startActivity(intent);
         finish();
-
     }
 
 

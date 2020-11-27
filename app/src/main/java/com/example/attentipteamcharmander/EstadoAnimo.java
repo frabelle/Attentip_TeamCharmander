@@ -38,17 +38,12 @@ public class EstadoAnimo extends AppCompatActivity {
         return new UserModel(extras.getString(FULLNAME_KEY));
     }
 
-
-
-
     private void SetUp(){
-
         Intent startIntent = getIntent();
         text = findViewById(R.id.textNombre);
 
         UserModel userModel = getUserModelFromSources(startIntent.getExtras());
         text.setText("Hola, " + userModel.getFullname());
-
     }
 
 

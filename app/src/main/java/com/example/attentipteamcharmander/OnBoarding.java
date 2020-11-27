@@ -28,10 +28,6 @@ public class OnBoarding extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding);
         setUp();
-
-
-
-
     }
 
 
@@ -43,17 +39,14 @@ public class OnBoarding extends AppCompatActivity {
 
 
         botonContinuar.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                signUp();
-
             }
         });
 
         loadDefaultDataIfDebug();
     }
-
 
     @SuppressLint("SetTextI18n")
     private void loadDefaultDataIfDebug() {
@@ -65,23 +58,19 @@ public class OnBoarding extends AppCompatActivity {
         userConfig.setUser(user);
     }
 
-
     private void navigateToMain(UserModel user) {
-        Intent intent = new Intent(this, EstadoAnimo.class);
+        Intent intent = new Intent(this, MainActivity.class);
 
         //la proxima activity ahora será la primera en el back stack
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.putExtra(EstadoAnimo.FULLNAME_KEY, user.getFullname());
+        intent.putExtra(MainActivity.FULLNAME_KEY, user.getFullname());
         startActivity(intent);
     }
-
 
     private void signUp() {
         userModel = new UserModel(EtNombre.getText().toString());
         saveUser(userModel);
         navigateToMain(userModel);
     }
-
-
 
 }

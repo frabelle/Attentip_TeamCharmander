@@ -12,18 +12,17 @@ import com.example.attentipteamcharmander.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
+ * Use the {@link RemindersFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class RemindersFragment extends Fragment {
 
-    public HomeFragment() {
+    public RemindersFragment() {
         // Required empty public constructor
     }
 
-
-    public static HomeFragment newInstance() {
-        HomeFragment fragment = new HomeFragment();
+    public static RemindersFragment newInstance() {
+        RemindersFragment fragment = new RemindersFragment();
         return fragment;
     }
 
@@ -36,6 +35,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_reminders, container, false);
     }
 }

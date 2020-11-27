@@ -5,18 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
+import com.example.attentipteamcharmander.data.UserConfig;
 import com.example.attentipteamcharmander.fragments.EstadoAnimoFragment;
 import com.example.attentipteamcharmander.fragments.HomeExerciseFragment;
-import com.example.attentipteamcharmander.fragments.HomeFragment;
+import com.example.attentipteamcharmander.fragments.ProgresoFragment;
+import com.example.attentipteamcharmander.fragments.RemindersFragment;
+import com.example.attentipteamcharmander.model.UserModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.security.InvalidParameterException;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String FULLNAME_KEY = "FULLNAME";
     BottomNavigationView bottomNavigation;
     private ViewGroup rootView;
 
@@ -29,8 +34,21 @@ public class MainActivity extends AppCompatActivity {
         rootView = findViewById(R.id.ly_root);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        openFragment(HomeFragment.newInstance());
+        openFragment(HomeExerciseFragment.newInstance());
 
+    }
+
+    @NonNull
+    private UserModel getUserModelFromSources(Bundle extras) {
+        UserConfig userConfig = new UserConfig(getApplicationContext());
+        final UserModel user = userConfig.getUser();
+        if(user != null) {
+            return user;
+        }
+        if(extras == null) {
+            throw new InvalidParameterException("Extras");
+        }
+        return new UserModel(extras.getString(FULLNAME_KEY));
     }
 
     public void openFragment(Fragment fragment) {
@@ -44,24 +62,20 @@ public class MainActivity extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
-                        case R.id.home:
-                            openFragment(HomeFragment.newInstance());
+                        case R.id.exercise:
+                            openFragment(HomeExerciseFragment.newInstance());
                             return true;
 
                         case R.id.mood:
-                            openFragment(EstadoAnimoFragment.newInstance());
-                             return true;
-
-                        case R.id.exercise:
-                            openFragment(HomeExerciseFragment.newInstance());
+                            openFragment(EstadoAnimoFragment.newInstance(FULLNAME_KEY));
                              return true;
 
                         case R.id.goals:
-                            openFragment(HomeFragment.newInstance());
+                            openFragment(ProgresoFragment.newInstance());
                             return true;
 
                         case R.id.reminders:
-                            openFragment(HomeFragment.newInstance());
+                            openFragment(RemindersFragment.newInstance());
                             return true;
                     }
                     return false;

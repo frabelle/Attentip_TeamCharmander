@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String FULLNAME_KEY = "FULLNAME";
     BottomNavigationView bottomNavigation;
     private ViewGroup rootView;
+    public String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,16 @@ public class MainActivity extends AppCompatActivity {
         rootView = findViewById(R.id.ly_root);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        openFragment(HomeExerciseFragment.newInstance());
+        SetUp();
 
+        openFragment(HomeExerciseFragment.newInstance(username));
+
+    }
+
+    private void SetUp(){
+        Intent startIntent = getIntent();
+        UserModel userModel = getUserModelFromSources(startIntent.getExtras());
+        username = userModel.getFullname();
     }
 
     @NonNull
@@ -63,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.exercise:
-                            openFragment(HomeExerciseFragment.newInstance());
+                            openFragment(HomeExerciseFragment.newInstance(username));
                             return true;
 
                         case R.id.mood:
-                            openFragment(EstadoAnimoFragment.newInstance(FULLNAME_KEY));
+                            openFragment(EstadoAnimoFragment.newInstance(username));
                              return true;
 
                         case R.id.goals:

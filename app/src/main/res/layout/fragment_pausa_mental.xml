@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PausaMentalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/mental1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/AppTheme.Base.Title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pausa Activa:"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/text2" />
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/AppTheme.Base.CardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Mental"
+                app:layout_constraintBottom_toBottomOf="@+id/welcome" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/logoapp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.241" />
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/AppTheme.Base.TextP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="10dp"
+            android:text="Elige tu sesión favorita:"
+            app:layout_constraintBottom_toTopOf="@+id/linesession"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <LinearLayout
+            android:id="@+id/linesession"
+            android:layout_width="408dp"
+            android:layout_height="396dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text4">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="290dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/morado_de_mental"
+                android:text="Respiración"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="290dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/morado_de_mental"
+                android:text="Meditación"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="290dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/morado_de_mental"
+                android:text="Visualización"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

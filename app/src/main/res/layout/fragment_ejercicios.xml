@@ -116,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="182dp"
             android:layout_marginBottom="20dp"
-            android:padding="20dp"
+            android:padding="10dp"
             android:src="@drawable/pausactiva"
             tools:layout_editor_absoluteY="10dp"
             tools:layout_editor_absolutex="10dp">

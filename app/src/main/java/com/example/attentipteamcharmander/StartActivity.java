@@ -14,6 +14,9 @@ public class StartActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        Intent intent;
+//        intent =  new Intent(getBaseContext(), ProfileActivity.class);
+//        startActivity(intent);
         launchFirstActivity();
     }
 
@@ -31,6 +34,5 @@ public class StartActivity extends Activity {
         startActivity(intent);
         finish();
     }
-
 
 }

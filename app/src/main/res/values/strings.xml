@@ -40,4 +40,6 @@
     <string name="user_name">Carlos Martínez</string>
     <string name="concept">Son breves descansos durante la jornada laboral que sirven para recuperar energía, mejorar el desempeño y eficiencia en el trabajo, a través de diferentes técnicas y ejercicios que ayudan a reducir la fatiga laboral, trastornos osteomusculares y prevenir el estrés.</string>
     <string name="QuestionProfile">¿Qué son las Pausas Activas?</string>
+    <string name="excercise_name">Flexibilidad de cuello</string>
+    <string name="tiempo">1 Min</string>
 </resources>

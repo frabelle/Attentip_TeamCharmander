@@ -42,4 +42,5 @@
     <string name="QuestionProfile">¿Qué son las Pausas Activas?</string>
     <string name="excercise_name">Flexibilidad de cuello</string>
     <string name="tiempo">1 Min</string>
+    <string name="finalizar">Finalizar</string>
 </resources>

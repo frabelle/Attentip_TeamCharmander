@@ -2,7 +2,6 @@ package com.example.attentipteamcharmander;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -10,15 +9,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.attentipteamcharmander.data.UserConfig;
+import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
 import com.example.attentipteamcharmander.fragments.EstadoAnimoFragment;
 import com.example.attentipteamcharmander.fragments.HomeExerciseFragment;
 import com.example.attentipteamcharmander.fragments.ProgresoFragment;
 import com.example.attentipteamcharmander.fragments.RemindersFragment;
 import com.example.attentipteamcharmander.model.UserModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.bumptech.glide.Glide;
 
 import java.security.InvalidParameterException;
 
@@ -40,9 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
         SetUp();
 
-        openFragment(HomeExerciseFragment.newInstance(username));
+        openFragment(EjerciciosFragment.newInstance());
+
 
     }
+
+
 
     private void SetUp(){
         Intent startIntent = getIntent();
@@ -97,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.reminders:
                 openFragment(RemindersFragment.newInstance());
                 break;
-
         }
     }
 
@@ -112,5 +116,8 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
+
+
 
 }

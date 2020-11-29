@@ -65,108 +65,72 @@
         style="@style/AppTheme.Base.TextP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/tipoPausa"
-        app:layout_constraintBottom_toTopOf="@id/line2"
+        app:layout_constraintBottom_toTopOf="@id/btnFisica"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <LinearLayout
-        android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:id="@+id/btnFisica"
+        android:layout_width="270dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/btnmental"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text3">
 
-        <androidx.cardview.widget.CardView
-            style="@style/Widget.MaterialComponents.CardView"
-            android:layout_width="265dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fisica"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                style="@style/AppTheme.Base.CardText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fisica"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:text="@string/fisica"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    style="@style/AppTheme.Base.CardText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fisica"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
 
-            </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnmental"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="270dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFisica">
 
-        <androidx.cardview.widget.CardView
-            style="@style/Widget.MaterialComponents.CardView"
-            android:layout_width="265dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mental1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                style="@style/AppTheme.Base.CardText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/mental1"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:text="@string/mental"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    style="@style/AppTheme.Base.CardText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/mental"
+        </LinearLayout>
 
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            style="@style/Widget.MaterialComponents.CardView"
-            android:layout_width="265dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="15dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/aleatorio1"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/AppTheme.Base.CardText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/aleatorio"
-
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

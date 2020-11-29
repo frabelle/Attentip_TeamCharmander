@@ -23,7 +23,7 @@ public class PausaMentalFragment extends Fragment {
     }
 
 
-    public static PausaMentalFragment newInstance(String param1, String param2) {
+    public static PausaMentalFragment newInstance() {
         PausaMentalFragment fragment = new PausaMentalFragment();
         return fragment;
     }

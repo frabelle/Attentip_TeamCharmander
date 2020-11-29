@@ -20,11 +20,9 @@ public class PausaFisicaFragment extends Fragment {
 
     public PausaFisicaFragment() {
         // Required empty public constructor
-
     }
 
-
-    public static PausaFisicaFragment newInstance(String param1, String param2) {
+    public static PausaFisicaFragment newInstance() {
         PausaFisicaFragment fragment = new PausaFisicaFragment();
         return fragment;
     }

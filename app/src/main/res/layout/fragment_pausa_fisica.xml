@@ -6,14 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".fragments.PausaFisicaFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ly1_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ly2_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
 
         <LinearLayout
             android:id="@+id/line1"
             android:layout_width="match_parent"
-            android:layout_height="185dp"
+            android:layout_height="170dp"
             android:background="@drawable/fisica"
             android:gravity="center"
             android:orientation="vertical"
@@ -36,30 +46,28 @@
                 style="@style/AppTheme.Base.CardText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
                 android:text="Física"
                 app:layout_constraintBottom_toBottomOf="@+id/welcome" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/logoapp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.241" />
+            app:layout_constraintTop_toTopOf="@id/ly1_logo"
+            app:layout_constraintBottom_toTopOf="@id/ly2_logo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
         <TextView
             android:id="@+id/text4"
             style="@style/AppTheme.Base.TextP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="38dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
             android:text="Elige tu sesión favorita:"
             app:layout_constraintBottom_toTopOf="@+id/linesession"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,20 +76,19 @@
 
         <LinearLayout
             android:id="@+id/linesession"
-            android:layout_width="408dp"
-            android:layout_height="396dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
             android:gravity="center"
             android:orientation="vertical"
+            android:layout_marginBottom="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text4">
+            app:layout_constraintTop_toBottomOf="@+id/text4"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="290dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"
                 android:text="Flexibilidad Dinámica"
                 android:textAllCaps="false"
@@ -90,7 +97,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="290dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"
                 android:text="Activación Muscular"
                 android:textAllCaps="false"
@@ -99,7 +106,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="290dp"
-                android:layout_height="75dp"
+                android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"
                 android:text="Movilidad Articular"
                 android:textAllCaps="false"
@@ -111,5 +118,3 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>

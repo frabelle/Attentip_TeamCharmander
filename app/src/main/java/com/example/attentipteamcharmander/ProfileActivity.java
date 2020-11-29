@@ -4,18 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class ProfileActivity extends AppCompatActivity {
+
+    //FloatingActionButton fab = findViewById(R.id.fab);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return false;
+        //fab.setImageDrawable(getResources().getDrawable(R.drawable.pulpitriste));
+
     }
 
 }

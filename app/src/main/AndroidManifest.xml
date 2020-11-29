@@ -12,8 +12,6 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".HistorialEstadoA" />
         <activity android:name=".OnBoarding" />
-        <activity android:name=".PausaFisica" />
-        <activity android:name=".PausaMental" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>

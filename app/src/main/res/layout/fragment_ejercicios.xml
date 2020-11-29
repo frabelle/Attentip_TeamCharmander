@@ -46,7 +46,6 @@
 
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/pruebaid"
         android:layout_width="399dp"

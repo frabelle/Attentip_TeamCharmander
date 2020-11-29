@@ -2,15 +2,18 @@ package com.example.attentipteamcharmander;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.attentipteamcharmander.data.UserConfig;
 import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
@@ -19,6 +22,7 @@ import com.example.attentipteamcharmander.fragments.HomeExerciseFragment;
 import com.example.attentipteamcharmander.fragments.ProgresoFragment;
 import com.example.attentipteamcharmander.fragments.RemindersFragment;
 import com.example.attentipteamcharmander.model.UserModel;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.bumptech.glide.Glide;
 
@@ -28,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String FULLNAME_KEY = "FULLNAME";
     BottomNavigationView bottomNavigation;
-    private ViewGroup rootView;
     public String username;
 
     @Override
@@ -37,22 +40,40 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
-        rootView = findViewById(R.id.ly_root);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        MaterialToolbar toolbar = findViewById(R.id.topAppBar2);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+
         SetUp();
-
-        openFragment(EjerciciosFragment.newInstance());
-
-
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.appbar, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.user) {
+            Toast.makeText(getApplicationContext(), "Seleccionaste la opción de Usuario!",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        return true;
+    }
 
     private void SetUp(){
         Intent startIntent = getIntent();
         UserModel userModel = getUserModelFromSources(startIntent.getExtras());
         username = userModel.getFullname();
+
+        openFragment(HomeExerciseFragment.newInstance(username));
     }
 
     @NonNull
@@ -83,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
 
+
     private void SelectItemMenu(MenuItem item){
         item.setCheckable(true);
         // init corresponding fragment
@@ -100,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.reminders:
-                openFragment(RemindersFragment.newInstance());
+                openFragment(EjerciciosFragment.newInstance());
                 break;
         }
     }
@@ -116,8 +138,4 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
-
-
-
 }

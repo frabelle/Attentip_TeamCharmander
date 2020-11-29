@@ -1,14 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_logo"
     tools:context=".fragments.RemindersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/line1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/azul_fondo_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/textA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Alarm"
+            style="@style/AppTheme.Base.Title1"
+            app:layout_constraintBottom_toBottomOf="@+id/welcome"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/blancoOpaco">
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="327dp" />
+
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:background="@color/azul_sec_dark"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textB"
+                style="@style/AppTheme.Base.Title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horario" />
+
+            <TextView
+                android:id="@+id/textC"
+                style="@style/AppTheme.Base.Title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horarioej" />
+
+            <TextView
+                android:id="@+id/textD"
+                style="@style/AppTheme.Base.Title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horariohora" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/azul_fondo_dark"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/continuar"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/azul_fondo_dark"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/cancelar"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

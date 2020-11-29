@@ -42,5 +42,9 @@
     <string name="QuestionProfile">¿Qué son las Pausas Activas?</string>
     <string name="excercise_name">Flexibilidad de cuello</string>
     <string name="tiempo">1 Min</string>
-    <string name="finalizar">Finalizar</string>
+    <string name="Alarm">Alarma de Pausa Activa</string>
+    <string name="horario">Horario de Pausa Activa</string>
+    <string name="horarioej">Lunes, Jueves y Viernes</string>
+    <string name="horariohora">10:00 am</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

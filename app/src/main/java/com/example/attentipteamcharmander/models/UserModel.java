@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.model;
+package com.example.attentipteamcharmander.models;
 
 import android.icu.lang.UScript;
 

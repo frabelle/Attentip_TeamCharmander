@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
-import com.example.attentipteamcharmander.model.UserModel;
+import com.example.attentipteamcharmander.models.UserModel;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

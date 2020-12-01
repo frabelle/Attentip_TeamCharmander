@@ -28,8 +28,6 @@ public class EjerciciosFragment extends Fragment {
         // Required empty public constructor
     }
 
-
-
     public static EjerciciosFragment newInstance() {
         EjerciciosFragment fragment = new EjerciciosFragment();
         return fragment;
@@ -61,7 +59,5 @@ public class EjerciciosFragment extends Fragment {
     private void setupGif(View view) {
         ImageView imageView = view.findViewById(R.id.pruebaid);
         Glide.with(this).load(R.drawable.neckgif).into(imageView);
-
-
     }
 }

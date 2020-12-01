@@ -10,7 +10,7 @@ import android.widget.EditText;
 import com.example.attentipteamcharmander.data.UserConfig;
 
 
-import com.example.attentipteamcharmander.model.UserModel;
+import com.example.attentipteamcharmander.models.UserModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputLayout;
 

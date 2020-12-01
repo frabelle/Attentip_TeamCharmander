@@ -59,11 +59,11 @@
     },
     {
       "nombre": "Mental",
-      "subcategoria": [
-        {   
+      "subcategorias": [
+        {
           "nombre":"Respiración",
           "ejercicios":[
-            {     
+            {
               "nombre": "Respiración profunda",
               "descripcion": "Concetrate en tu respiración con los ojos cerrados"
             },
@@ -114,5 +114,4 @@
       ]
     }
   ]
-
 }

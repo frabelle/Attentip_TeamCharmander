@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.attentipteamcharmander.MainActivity;
 import com.example.attentipteamcharmander.R;
 
 /**
@@ -44,7 +45,6 @@ public class EjerciciosFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ejercicios, container, false);
     }
-
 
     private void setup(@NonNull View view) {
         setupGif(view);

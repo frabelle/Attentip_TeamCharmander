@@ -16,6 +16,7 @@ import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
 import com.example.attentipteamcharmander.fragments.EstadoAnimoFragment;
 import com.example.attentipteamcharmander.fragments.HomeExerciseFragment;
 import com.example.attentipteamcharmander.fragments.ProgresoFragment;
+import com.example.attentipteamcharmander.fragments.RemindersFragment;
 import com.example.attentipteamcharmander.models.UserModel;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.reminders:
-                openFragment(EjerciciosFragment.newInstance());
+                openFragment(RemindersFragment.newInstance());
                 break;
         }
     }

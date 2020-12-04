@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.example.attentipteamcharmander.R;
 import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
+import com.example.attentipteamcharmander.fragments.EjerciciosMentalesFragment;
 
 
 public class EjercicioMeditacionFragment extends Fragment {
@@ -23,8 +24,8 @@ public class EjercicioMeditacionFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static EjerciciosFragment newInstance() {
-        EjerciciosFragment fragment = new EjerciciosFragment();
+    public static EjercicioMeditacionFragment newInstance() {
+        EjercicioMeditacionFragment fragment = new EjercicioMeditacionFragment();
         return fragment;
     }
 
@@ -37,7 +38,7 @@ public class EjercicioMeditacionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicios, container, false);
+        return inflater.inflate(R.layout.fragment_ejercicio_meditacion, container, false);
     }
 
     private void setup(@NonNull View view) {

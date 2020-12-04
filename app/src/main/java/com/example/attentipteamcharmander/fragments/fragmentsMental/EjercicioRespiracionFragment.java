@@ -24,8 +24,8 @@ public class EjercicioRespiracionFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static EjerciciosFragment newInstance() {
-        EjerciciosFragment fragment = new EjerciciosFragment();
+    public static EjercicioRespiracionFragment newInstance() {
+        EjercicioRespiracionFragment fragment = new EjercicioRespiracionFragment();
         return fragment;
     }
 
@@ -38,7 +38,7 @@ public class EjercicioRespiracionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicios, container, false);
+        return inflater.inflate(R.layout.fragment_ejercicio_respiracion, container, false);
     }
 
     private void setup(@NonNull View view) {

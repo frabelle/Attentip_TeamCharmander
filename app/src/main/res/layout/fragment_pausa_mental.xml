@@ -87,32 +87,35 @@
         app:layout_constraintTop_toBottomOf="@+id/text4"
         app:layout_constraintBottom_toBottomOf="parent">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="290dp"
-                android:layout_height="90dp"
-                android:backgroundTint="@color/morado_de_mental"
-                android:text="Respiración"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                app:cornerRadius="10dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRes"
+            android:layout_width="290dp"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/morado_de_mental"
+            android:text="Respiración"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="290dp"
-                android:layout_height="90dp"
-                android:backgroundTint="@color/morado_de_mental"
-                android:text="Meditación"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                app:cornerRadius="10dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMedi"
+            android:layout_width="290dp"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/morado_de_mental"
+            android:text="Meditación"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="290dp"
-                android:layout_height="90dp"
-                android:backgroundTint="@color/morado_de_mental"
-                android:text="Visualización"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                app:cornerRadius="10dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVisual"
+            android:layout_width="290dp"
+            android:layout_height="90dp"
+            android:backgroundTint="@color/morado_de_mental"
+            android:text="Visualización"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
 
         </LinearLayout>
 

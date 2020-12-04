@@ -20,11 +20,7 @@ import com.example.attentipteamcharmander.fragments.fragmentsFisica.EjercicioCue
 import com.example.attentipteamcharmander.fragments.fragmentsFisica.EjercicioInferiorFragment;
 import com.google.android.material.button.MaterialButton;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link EjerciciosFisicosFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class EjerciciosFisicosFragment extends Fragment {
 
 

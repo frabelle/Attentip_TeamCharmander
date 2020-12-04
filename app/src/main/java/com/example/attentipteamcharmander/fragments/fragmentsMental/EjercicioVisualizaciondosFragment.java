@@ -25,8 +25,8 @@ public class EjercicioVisualizaciondosFragment extends Fragment {
     }
 
 
-    public static EjerciciosFragment newInstance() {
-        EjerciciosFragment fragment = new EjerciciosFragment();
+    public static EjercicioVisualizaciondosFragment newInstance() {
+        EjercicioVisualizaciondosFragment fragment = new EjercicioVisualizaciondosFragment();
         return fragment;
     }
 
@@ -39,7 +39,7 @@ public class EjercicioVisualizaciondosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicios, container, false);
+        return inflater.inflate(R.layout.fragment_ejercicio_visualizaciondos, container, false);
     }
 
     private void setup(@NonNull View view) {

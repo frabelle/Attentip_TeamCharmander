@@ -55,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.user) {
-            Toast.makeText(getApplicationContext(), "Seleccionaste la opción de Usuario!",
-                    Toast.LENGTH_SHORT).show();
+            CambiarPerfil();
         }
 
         return true;
@@ -66,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         Intent startIntent = getIntent();
         UserModel userModel = getUserModelFromSources(startIntent.getExtras());
         username = userModel.getFullname();
-
         openFragment(HomeExerciseFragment.newInstance(username));
     }
 
@@ -119,6 +117,13 @@ public class MainActivity extends AppCompatActivity {
                 openFragment(EjerciciosFragment.newInstance());
                 break;
         }
+    }
+
+    public void CambiarPerfil(){
+        Intent intent;
+        intent =  new Intent(getBaseContext(), ProfileActivity.class);
+        intent.putExtra(ProfileActivity.FULLNAME_KEY, username);
+        startActivity(intent);
     }
 
     @Override

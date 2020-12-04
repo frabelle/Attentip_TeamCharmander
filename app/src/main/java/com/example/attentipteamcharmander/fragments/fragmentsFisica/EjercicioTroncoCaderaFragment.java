@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsFisica;
 
 import android.os.Bundle;
 
@@ -12,19 +12,21 @@ import com.example.attentipteamcharmander.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link EjercicioAbsTroncoFragment#newInstance} factory method to
+ * Use the {@link EjercicioTroncoCaderaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class EjercicioAbsTroncoFragment extends Fragment {
+public class EjercicioTroncoCaderaFragment extends Fragment {
+
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
     private String mParam1;
     private String mParam2;
 
-    public EjercicioAbsTroncoFragment() {
+    public EjercicioTroncoCaderaFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class EjercicioAbsTroncoFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment EjercicioAbsTroncoFragment.
+     * @return A new instance of fragment EjercicioTroncoCaderaFragment.
      */
 
-    public static EjercicioAbsTroncoFragment newInstance(String param1, String param2) {
-        EjercicioAbsTroncoFragment fragment = new EjercicioAbsTroncoFragment();
+    public static EjercicioTroncoCaderaFragment newInstance(String param1, String param2) {
+        EjercicioTroncoCaderaFragment fragment = new EjercicioTroncoCaderaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class EjercicioAbsTroncoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicio_abs_tronco, container, false);
+        return inflater.inflate(R.layout.fragment_ejercicio_tronco_cadera, container, false);
     }
 }

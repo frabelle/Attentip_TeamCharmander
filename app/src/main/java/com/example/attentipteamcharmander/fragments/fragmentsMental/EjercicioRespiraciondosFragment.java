@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsMental;
 
 import android.os.Bundle;
 
@@ -13,12 +13,25 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.attentipteamcharmander.R;
+import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
 
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link EjercicioRespiraciondosFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class EjercicioRespiraciondosFragment extends Fragment {
 
-public class EjercicioMeditacionFragment extends Fragment {
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
 
-    public EjercicioMeditacionFragment() {
+    public EjercicioRespiraciondosFragment() {
         // Required empty public constructor
     }
 
@@ -51,6 +64,6 @@ public class EjercicioMeditacionFragment extends Fragment {
 
     private void setupGif(View view) {
         ImageView imageView = view.findViewById(R.id.pruebaid);
-        Glide.with(this).load(R.drawable.meditacion).into(imageView);
+        Glide.with(this).load(R.drawable.respiraciondos).into(imageView);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsFisica;
 
 import android.os.Bundle;
 

@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsFisica;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.attentipteamcharmander.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link EjercicioCuelloFragment#newInstance} factory method to
+ * Use the {@link EjercicioRodillaTobilloFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class EjercicioCuelloFragment extends Fragment {
+public class EjercicioRodillaTobilloFragment extends Fragment {
 
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class EjercicioCuelloFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public EjercicioCuelloFragment() {
+    public EjercicioRodillaTobilloFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class EjercicioCuelloFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment EjercicioCuelloFragment.
+     * @return A new instance of fragment EjercicioRodillaTobilloFragment.
      */
 
-    public static EjercicioCuelloFragment newInstance(String param1, String param2) {
-        EjercicioCuelloFragment fragment = new EjercicioCuelloFragment();
+    public static EjercicioRodillaTobilloFragment newInstance(String param1, String param2) {
+        EjercicioRodillaTobilloFragment fragment = new EjercicioRodillaTobilloFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class EjercicioCuelloFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicio_cuello, container, false);
+        return inflater.inflate(R.layout.fragment_ejercicio_rodilla_tobillo, container, false);
     }
 }

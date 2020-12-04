@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsMental;
 
 import android.os.Bundle;
 
@@ -13,6 +13,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.attentipteamcharmander.R;
+import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
 
 
 public class EjercicioVisualizacionFragment extends Fragment {

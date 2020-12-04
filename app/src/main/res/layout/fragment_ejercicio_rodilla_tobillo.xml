@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".fragments.EjercicioRodillaTobilloFragment">
+    tools:context=".fragments.fragmentsFisica.EjercicioRodillaTobilloFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/ly1_logo"

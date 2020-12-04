@@ -1,4 +1,4 @@
-package com.example.attentipteamcharmander.fragments;
+package com.example.attentipteamcharmander.fragments.fragmentsMental;
 
 import android.os.Bundle;
 
@@ -13,14 +13,13 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.attentipteamcharmander.R;
+import com.example.attentipteamcharmander.fragments.EjerciciosFragment;
 
 
-
-public class EjercicioRespiracionFragment extends Fragment {
-
+public class EjercicioMeditacionFragment extends Fragment {
 
 
-    public EjercicioRespiracionFragment() {
+    public EjercicioMeditacionFragment() {
         // Required empty public constructor
     }
 
@@ -53,7 +52,6 @@ public class EjercicioRespiracionFragment extends Fragment {
 
     private void setupGif(View view) {
         ImageView imageView = view.findViewById(R.id.pruebaid);
-        Glide.with(this).load(R.drawable.respiracion).into(imageView);
+        Glide.with(this).load(R.drawable.meditacion).into(imageView);
     }
-
 }

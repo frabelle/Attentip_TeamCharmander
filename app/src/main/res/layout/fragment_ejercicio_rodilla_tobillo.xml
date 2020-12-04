@@ -77,7 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/botonregresar"
+        android:id="@+id/btnnext"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"

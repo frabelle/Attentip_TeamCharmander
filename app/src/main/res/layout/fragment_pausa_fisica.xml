@@ -87,6 +87,7 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFd"
                 android:layout_width="290dp"
                 android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"
@@ -96,6 +97,7 @@
                 app:cornerRadius="10dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAc"
                 android:layout_width="290dp"
                 android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"
@@ -105,6 +107,7 @@
                 app:cornerRadius="10dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMa"
                 android:layout_width="290dp"
                 android:layout_height="90dp"
                 android:backgroundTint="@color/rojo_de_fisico"

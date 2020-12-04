@@ -79,16 +79,17 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/botonregresar"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
         android:backgroundTint="@color/pink_logo"
         android:text="@string/finalizar"
         android:textAllCaps="false"
         android:textColor="@color/azul_fondo_dark"
         android:textSize="20sp"
-        android:layout_margin="20dp"
-        app:cornerRadius="10dp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/arrow_forward_ios_24px"
         app:iconGravity="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

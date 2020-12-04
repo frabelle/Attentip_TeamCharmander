@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.EjercicioRespiracionFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ly1_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ly2_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/azul_fondo_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintBottom_toTopOf="@id/pruebaid"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/AppTheme.Base.CardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respiración"
+            android:textSize="29sp"
+            app:layout_constraintBottom_toBottomOf="@+id/welcome" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pruebaid"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:src="@drawable/respiracion"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/line1"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/azul_fondo_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pruebaid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicios de respiración para relajar"
+        style="@style/AppTheme.Base.TextP"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonregresar"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/pink_logo"
+        android:text="@string/finalizar"
+        android:textAllCaps="false"
+        android:textColor="@color/azul_fondo_dark"
+        android:textSize="20sp"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/arrow_forward_ios_24px"
+        app:iconGravity="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

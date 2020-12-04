@@ -49,54 +49,5 @@ public class EjerciciosFisicosFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_ejercicios_fisicos, container, false);
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        setup(view);
-    }
-
-    private void setup(@NonNull View view) {
-        setupinit(view);
-    }
-
-    private void setupinit(View view) {
-        MaterialButton btn1, btn2, btn3;
-
-        btn1 = view.findViewById(R.id.btnFd);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFragment(EjercicioInferiorFragment.newInstance());
-            }
-        });
-
-        btn2 = view.findViewById(R.id.btnAc);
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFragment(EjercicioAbsTroncoFragment.newInstance());
-            }
-        });
-
-        btn3 = view.findViewById(R.id.btnMa);
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFragment(EjercicioCuelloFragment.newInstance());
-            }
-        });
-    }
-
-    public void openFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-    }
-
 
 }

@@ -7,7 +7,7 @@
 * Fragments
 * Material Design
 * Shared Preferences
-* Appbar & Bottombar
+* Topbar & Bottombar
 * Glide
 
 ## Vista
